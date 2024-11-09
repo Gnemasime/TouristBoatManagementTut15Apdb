@@ -23,7 +23,7 @@ namespace TouristBoatManagementTut15Apdb.Controllers
                                join to in db.tours on ca.CaptainId equals to.CaptainId
                                join bo in db.boats on ca.AssignedBoatId equals bo.BoatId
                                where to.IsCompleted == true
-                               group to by new {  ca.Name, ca.LicenseType, ca.ExperiencePoints } into captainGroup
+                               group to by new { ca.CaptainId, ca.Name, ca.LicenseType, ca.ExperiencePoints } into captainGroup
                                select new
                                {
                                    captainGroup.Key.Name,
