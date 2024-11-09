@@ -1,0 +1,58 @@
+﻿@model TouristBoatManagementTut15Apdb.Models.CaptainPerfomanceVIewModel
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CaptainPerfomanceVIewModel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LicenseType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LicenseType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExperiencePoints)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExperiencePoints)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalEarnings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalEarnings)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TourRatings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TourRatings)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CaptainViewId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
